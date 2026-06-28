@@ -4,88 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Task Bar Hero Anime</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="src/game.js"></script>
   </head>
   <body>
-    <main class="app" aria-label="Task Bar Hero Anime prototype">
-      <section class="hero-panel" aria-label="Hero status">
-        <div class="panel-heading">
-          <p class="eyebrow">Active hero</p>
-          <h1>Aiko</h1>
-        </div>
-
-        <div class="hero-avatar" aria-hidden="true">AIKO</div>
-
-        <dl class="stats-grid">
-          <div>
-            <dt>Gold</dt>
-            <dd id="goldValue">0</dd>
-          </div>
-          <div>
-            <dt>DPS</dt>
-            <dd id="dpsValue">0</dd>
-          </div>
-          <div>
-            <dt>Click</dt>
-            <dd id="clickDamageValue">0</dd>
-          </div>
-          <div>
-            <dt>Kills</dt>
-            <dd id="killsValue">0</dd>
-          </div>
-        </dl>
-      </section>
-
-      <section class="battle-panel" aria-label="Battlefield">
-        <div class="monster-header">
-          <div>
-            <p class="eyebrow">Monster</p>
-            <h2 id="monsterName">Training Slime</h2>
-          </div>
-          <span id="monsterLevel" class="level-badge">Level 1</span>
-        </div>
-
-        <button id="monsterButton" class="monster-button" type="button">
-          <span class="monster-core" aria-hidden="true"></span>
-          <span class="monster-label">Attack</span>
-        </button>
-
-        <div class="hp-block">
-          <div class="hp-meta">
-            <span>HP</span>
-            <strong id="monsterHpText">10 / 10</strong>
-          </div>
-          <div class="hp-bar" aria-hidden="true">
-            <span id="monsterHpBar"></span>
-          </div>
-        </div>
-      </section>
-
-      <section class="shop-panel" aria-label="Upgrade shop">
-        <div class="panel-heading">
-          <p class="eyebrow">Shop</p>
-          <h2>Upgrades</h2>
-        </div>
-
-        <button id="buySwordButton" class="shop-item" type="button">
-          <span>
-            <strong>Sword Training</strong>
-            <small id="swordLevelText">Level 0</small>
-          </span>
-          <span id="swordCostText">10 gold</span>
-        </button>
-
-        <button id="buyClickButton" class="shop-item" type="button">
-          <span>
-            <strong>Focused Strike</strong>
-            <small id="clickLevelText">Level 0</small>
-          </span>
-          <span id="clickCostText">8 gold</span>
-        </button>
-
-        <button id="resetButton" class="ghost-button" type="button">Reset save</button>
-      </section>
-    </main>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
